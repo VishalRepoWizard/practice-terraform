@@ -30,7 +30,7 @@ resource "aws_vpc" "vpc" {
 }
 
 resource "aws_s3_bucket" "Bucket" {
-  bucket = "my-tf-test-bucket"
+  bucket = "uhgdyuwfhwefbwyfgrf"
 
   tags = {
     Name        = "My bucket"
