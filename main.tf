@@ -4,7 +4,7 @@ terraform {
       dynamodb_table = "state-lock"
       key = "global/mystate/terraform.tfstate"
       region = "ap-south-1"
-      encrypted = true  
+      encrypt = true  
   }
 }
 provider "aws" {
