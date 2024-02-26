@@ -16,7 +16,7 @@ resource "aws_s3_bucket" "mybucket" {
 
 resource "aws_dynamodb_table" "ststelock" {
     name = "state-lock"
-    billing_mode = "PAY-PER-REQUEST"
+    billing_mode = "PAY_PER_REQUEST"
     hash_key = "LockID"
 
     attribute {
