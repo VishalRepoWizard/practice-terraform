@@ -1,16 +1,3 @@
-terraform {
-  backend "s3" {
-      bucket = "aasdfghjkkkkd"
-      dynamodb_table = "state-lock"
-      key = "global/mystate/terraform.tfstate"
-      region = "ap-south-1"
-      encrypt = true  
-  }
-}
-provider "aws" {
-    region = "ap-south-1"
-}
-
 resource "aws_instance" "Redhat" {
     ami                     = "ami-05a5bb48beb785bf1"
     instance_type           = "t2.micro"
